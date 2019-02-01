@@ -15,7 +15,7 @@ typedef TextProps = {
 	?onPress:Function,
 	?pressRetentionOffset:{top: Int, left: Int, bottom: Int, right: Int},
 	?selectable:Bool,
-	?style:haxe.extern.EitherType<TextStyle, Array<TextStyle>>,
+	?style:Dynamic, //:haxe.extern.EitherType<TextStyle, Array<TextStyle>>,
 	?testID:String,
 	// android
 	?selectionColor:Color,

@@ -3,7 +3,7 @@ package react.native.component.props;
 import haxe.Constraints;
 
 typedef CheckBoxProps = {
-	> ViewProps.ViewPropsWithoutStyle,
+	> ViewProps,
 	?disabled:Bool,
 	?onChange:Function,
 	?onValueChange:Function,

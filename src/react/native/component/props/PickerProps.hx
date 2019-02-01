@@ -7,10 +7,9 @@ abstract PickerMode(String) {
 }
 
 typedef PickerProps = {
-	> ViewProps.ViewPropsWithoutStyle,
+	> ViewProps,
 	?onValueChange:Dynamic->Int->Void,
 	?selectedValue:Dynamic,
-	?style:Dynamic,
 	?testID:String,
 	//android
 	?enabled:Bool,

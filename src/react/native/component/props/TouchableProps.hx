@@ -9,7 +9,7 @@ typedef TouchableProps = {
 	?onPress:Function,
 	?onPressOut:Function,
 	?onPressIn:Function,
-	?style:haxe.extern.EitherType<ViewStyle, Array<ViewStyle>>,
+	?style:Dynamic, //:haxe.extern.EitherType<ViewStyle, Array<ViewStyle>>,
 	?disabled:Bool,
 	?delayPressIn:Float,
 	?delayPressOut:Float,

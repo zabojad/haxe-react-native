@@ -31,7 +31,8 @@ typedef FlatListProps<T> = {
 	?changed:Array<ViewToken>,
 	?refreshing:Bool,
 	?renderItem:{item:T, index:Int}->ReactFragment,
-	?viewabilityConfig:ViewabilityConfig 
+	?viewabilityConfig:ViewabilityConfig,
+	?maxToRenderPerBatch:Int,
 }
 
 private typedef ViewToken = Dynamic;

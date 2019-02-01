@@ -7,7 +7,7 @@ typedef ProgressBarAndroidProps = {
 	?color:Color,
 	?indeterminate:Bool, 
 	?progress: Float,
-	?styleAttr:ProgressBarAndroidStyleAttr,
+	?style:Dynamic, //Attr:ProgressBarAndroidStyleAttr,
 	?testID:String,
 }
 

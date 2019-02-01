@@ -6,8 +6,8 @@ import haxe.Constraints;
 import haxe.extern.EitherType;
 
 typedef ScrollViewProps = {
-	> ViewProps.ViewPropsWithoutStyle,
-	?contentContainerStyle:ViewStyle,
+	> ViewProps.ViewPropsWithoutStyle,  //:haxe.extern.EitherType<ViewStyle, Array<ViewStyle>>,
+	?contentContainerStyle:Dynamic,
 	?horizontal:Bool,
 	?keyboardDismissMode:KeyboardDismissModeType,
 	?keyboardShouldPersistTaps:EitherType<KeyboardPersistType, Bool>,
@@ -20,7 +20,8 @@ typedef ScrollViewProps = {
 	?showsHorizontalScrollIndicator:Bool,
 	?showsVerticalScrollIndicator:Bool,
 	?stickyHeaderIndices:Array<Int>,
-	?style:ScrollViewStyle,
+	?containerStyle:Dynamic, //:haxe.extern.EitherType<ViewStyle, Array<ViewStyle>>,
+	?style:Dynamic, //:haxe.extern.EitherType<ScrollViewStyle, Array<ScrollViewStyle>>,
 	// android
 	?endFillColor:Color,
 	?overScrollMode:OverScrollModeType,

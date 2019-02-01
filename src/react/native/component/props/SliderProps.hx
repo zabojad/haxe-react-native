@@ -12,7 +12,7 @@ typedef SliderProps = {
 	?onSlidingComplete:Function,
 	?onValueChange:Function,
 	?step:Float,
-	?style:ViewStyle,
+	?style:Dynamic, //:haxe.extern.EitherType<ViewStyle, Array<ViewStyle>>,
 	?testID:String,
 	?value:Float,
 	// android

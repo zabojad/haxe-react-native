@@ -37,7 +37,7 @@ abstract TextContentType(String)
 @:enum
 abstract KeyBoardType(String) {
 	var Default = 'default';
-	var EmailAdress = 'email-address';
+	var EmailAddress = 'email-address';
 	var Numeric = 'numeric';
 	var PhonePad = 'phone-pad';
 	var ASCIICapable = 'ascii-capable';
@@ -137,7 +137,7 @@ typedef TextInputProps = {
 	?selectTextOnFocus:Bool,
 	?selection:{start:Int, end:Int},
 	?selectionColor:Color,
-	?style:TextStyle,
+	?style:Dynamic, //:haxe.extern.EitherType<TextStyle, Array<TextStyle>>,
 	?value:String,
 	?testID:String,
 	?textContentType:TextContentType,
